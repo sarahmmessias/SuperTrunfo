@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Jogue o Super Trunfo!
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="sortcut icon" href="img/icon.png" type="image/png" />
+    <meta name="author" content="Sarah Moreira">
+    <meta name="description" content="Jogo - Super Trunfo">
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="img/page-logo.png" class="page-logo"
+            alt="">
+        <h1 class="page-title">Jogue agora!</h1>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div class="wrapper">
+                <div>
+                    <div id="carta-jogador">
+                        <img src="img/card.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        <h3></h3>
+                    </div>
+                </div>
+                <div>
+                    <div id="carta-maquina" class="carta"><img
+                            src="img/card.png"
+                            style=" width: inherit; height: inherit; position: absolute;"></div>
+                </div>
+            </div>
+            <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+            <div id="resultado"></div>
+        </form>
+    </div>
+</body>
+
+</html>
